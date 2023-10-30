@@ -32,7 +32,7 @@ createApp({
         },
       ],
       //!! FLAG ACTIVE
-      activeSlide : 0
+      activeSlide : 0,
     };
 },
 methods : {
@@ -43,8 +43,10 @@ methods : {
     //* prev button
     prevSlide(){
         (this.activeSlide === 0) ? this.activeSlide = this.slides.length - 1 : this.activeSlide--
-    }
+    },
+    
 },
 mounted(){
+
 }
 }).mount("#app");
