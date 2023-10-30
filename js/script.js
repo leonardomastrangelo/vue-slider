@@ -33,6 +33,7 @@ createApp({
       ],
       //!! FLAG ACTIVE
       activeSlide : 0,
+      provina : ""
     };
 },
 methods : {
@@ -44,9 +45,12 @@ methods : {
     prevSlide(){
         (this.activeSlide === 0) ? this.activeSlide = this.slides.length - 1 : this.activeSlide--
     },
-    
+    prova(){
+        if (this.slides[this.activeSlide] === this.activeSlide) {
+            return this.provina = "active"
+        }
+    }
 },
 mounted(){
-
 }
 }).mount("#app");

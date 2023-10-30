@@ -29,7 +29,7 @@
                 <div class="thumbs">
                     <div class="prev" @click="prevSlide"></div>
                     <div class="next" @click="nextSlide"></div>
-                    <div class="thumb" v-for="(slide,index) in slides">
+                    <div class="thumb" v-for="(slide,index) in slides" :class="prova()">
                         <img :src="slide.image" :alt="slide.title" />
                     </div>
                     <!-- <div class="thumb">
