@@ -33,7 +33,6 @@ createApp({
       ],
       //!! FLAG ACTIVE
       activeSlide : 0,
-      isActive : true
     };
 },
 methods : {
@@ -45,6 +44,9 @@ methods : {
     prevSlide(){
         (this.activeSlide === 0) ? this.activeSlide = this.slides.length - 1 : this.activeSlide--
     },
+    showSlide(index){
+        return this.activeSlide = index
+    }
 },
 mounted(){
 }
